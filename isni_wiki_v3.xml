@@ -1,0 +1,149 @@
+<collection>
+    <record>
+        <controlfield tag="001">
+            9930026243804341
+        </controlfield>
+        <datafield tag="100">
+            <subfield code="a">
+                Mary,
+            </subfield>
+            <subfield code="c">
+                Queen of Scots,
+            </subfield>
+            <subfield code="d">
+                1542-1587.
+            </subfield>
+        <subfield code="1">https://isni.org/isni/0000000121035913</subfield><subfield code="1">https://www.wikidata.org/wiki/Q131412</subfield><subfield code="9">LCNACO|Mary Queen of Scots</subfield></datafield>
+        <datafield tag="245">
+            <subfield code="a">
+                The affecting narrative and surprising adventures of Mary Stuart, Queen of Scotland.
+            </subfield>
+        </datafield>
+    </record>
+    <record>
+        <controlfield tag="001">
+            9930026253804341
+        </controlfield>
+        <datafield tag="100">
+            <subfield code="a">
+                Mary,
+            </subfield>
+            <subfield code="c">
+                Queen of Scots,
+            </subfield>
+            <subfield code="d">
+                1542-1587.
+            </subfield>
+        <subfield code="1">https://isni.org/isni/0000000121035913</subfield><subfield code="1">https://www.wikidata.org/wiki/Q131412</subfield><subfield code="9">LCNACO|Mary Queen of Scots</subfield></datafield>
+        <datafield tag="245">
+            <subfield code="a">
+                [Facsimiles of letters from Mary, Queen of Scots, Queen Elizabeth, and others.]
+            </subfield>
+        </datafield>
+    </record>
+    <record>
+        <controlfield tag="001">
+            9930026263804341
+        </controlfield>
+        <datafield tag="100">
+            <subfield code="a">
+                Mary,
+            </subfield>
+            <subfield code="c">
+                Queen of Scots,
+            </subfield>
+            <subfield code="d">
+                1542-1587.
+            </subfield>
+        <subfield code="1">https://isni.org/isni/0000000121035913</subfield><subfield code="1">https://www.wikidata.org/wiki/Q131412</subfield><subfield code="9">LCNACO|Mary Queen of Scots</subfield></datafield>
+        <datafield tag="245">
+            <subfield code="a">
+                Mary, Queen of Scots. [A dramatic version, in five acts, of "The Abbot", by Sir Walter Scott.]
+            </subfield>
+        </datafield>
+    </record>
+    <record>
+        <controlfield tag="001">
+            9930026373804341
+        </controlfield>
+        <datafield tag="100">
+            <subfield code="a">
+                Whyte-Melville, G. J.
+            </subfield>
+            <subfield code="q">
+                (George John),
+            </subfield>
+            <subfield code="d">
+                1821-1878.
+            </subfield>
+        <subfield code="1">https://isni.org/isni/0000000109097070</subfield><subfield code="1">https://www.wikidata.org/wiki/Q5546247</subfield><subfield code="9">LCNACO|G. J Whyte-Melville</subfield></datafield>
+        <datafield tag="245">
+            <subfield code="a">
+                Cerise; A tale of the last century.
+            </subfield>
+        </datafield>
+    </record>
+    <record>
+        <controlfield tag="001">
+            9930026563804341
+        </controlfield>
+        <datafield tag="100">
+            <subfield code="a">
+                Millar, J. P. M.
+            </subfield>
+            <subfield code="q">
+                (James Primrose Malcolm),
+            </subfield>
+            <subfield code="d">
+                1893-1989.
+            </subfield>
+        </datafield>
+        <datafield tag="245">
+            <subfield code="a">
+                Trade union education - some vital issues.
+            </subfield>
+        </datafield>
+    </record>
+    <record>
+        <controlfield tag="001">
+            9930026593804341
+        </controlfield>
+        <datafield tag="100">
+            <subfield code="a">
+                Miller, Hugh,
+            </subfield>
+            <subfield code="d">
+                1802-1856.
+            </subfield>
+            <subfield code="1">
+                https://isni.org/isni/000000012101774X
+            </subfield>
+        <subfield code="1">https://www.wikidata.org/wiki/Q376090</subfield><subfield code="9">LCNACO|Hugh Miller</subfield></datafield>
+        <datafield tag="245">
+            <subfield code="a">
+                [The testimony of the rocks.] [Galley proof of a review of "Testimony of the rocks."].
+            </subfield>
+        </datafield>
+    </record>
+    <record>
+		<controlfield tag="001">
+			9925290633804341
+		</controlfield>
+		<datafield tag="100">
+			<subfield code="a">
+				Cumming, Alexander,
+			</subfield>
+			<subfield code="d">
+				-1909.
+			</subfield>
+		<subfield code="1">https://isni.org/isni/0000000109276386</subfield><subfield code="1">https://www.wikidata.org/wiki/Q7345040</subfield><subfield code="9">LCNACO|Robert Cumming</subfield></datafield>
+		<datafield tag="245">
+			<subfield code="a">
+				The golden chain, and other sermons /
+			</subfield>
+			<subfield code="c">
+				by Alexander Cumming.
+			</subfield>
+		</datafield>
+	</record>
+</collection>
