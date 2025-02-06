@@ -7,15 +7,17 @@ from io import StringIO
 # Counters
 total = 0
 progress = 0
+existing_isni = 0
+no_new_LOD = 0
 
 # Variables
-apiKey = os.environ.get("ALMA_API_SANDBOX")
+apiKey = os.environ.get("ALMA_API_PROD")
 headers = {"Accept": "application/xml", "Content-Type": "application/xml"}
 
 # Error log file
 error_log_file = 'isni2alma_errors.txt'
 
-tree = ET.parse("results/isni_wiki/isni_wiki_v4_qa_checked.xml")
+tree = ET.parse("results\isni_wiki\isni_wiki_v4_qa_checked.xml")
 root = tree.getroot()
 total = len(root)
 
@@ -37,12 +39,14 @@ for child in root:
         # Skip if nothing new to add
         if isni == "" and qa == "":
             progress += 1
+            no_new_LOD +=1
             continue
         # Get Alma record from API
         url = f"https://api-eu.hosted.exlibrisgroup.com/almaws/v1/bibs/{mmsID}?apikey={apiKey}"
         r = requests.get(url, headers=headers)
         if r.status_code != 200:
-            print(f"Error for MMS ID {mmsID}: {r.text}")
+            with open(error_log_file, 'a') as error_file:
+                error_file.write(f"{mmsID} - no bibrec\n")
             # Skip the record if the error message indicates an invalid MMS ID
             if "Invalid MMS ID" in r.text:
                 progress += 1
@@ -65,6 +69,7 @@ for child in root:
                         if qa != "":
                             field100.add_subfield("z", qa)
                     else:
+                        existing_isni +=1
                         if len(field100_z) == 0:
                             field100.add_subfield("z", "ISNIQAPASS_HUMAN")
                     if not any("wiki" in subfield for subfield in field100_1):
@@ -85,11 +90,14 @@ for child in root:
                 else:
                     # Log the MMS ID to the error log file if field100 is None
                     with open(error_log_file, 'a') as error_file:
-                        error_file.write(f"{mmsID}\n")
+                        error_file.write(f"{mmsID} - no 100 field\n")
             progress += 1  # Incrementing here only once per record
-    print(f"\rProgress: {progress}/{total} records", end="")
+    print(f"\rProgress: {progress}/{total} records, {existing_isni} recs with existing ISNI, {no_new_LOD} recs with no new LOD elements", end="")
+total_skipped = existing_isni + no_new_LOD
+updated_record_count = progress - total_skipped
+print(f"\n{updated_record_count} records updated with LOD")
 
-    '''
+'''
 import os
 import pymarc
 import requests
